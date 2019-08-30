@@ -7,6 +7,9 @@ server.use(bodyParser.urlencoded({
     extended: true
 }));
 
+server.get('/',function(req,res){
+ res.render("receipt")
+ });
 
 
 server.post('/',function(req,res){
